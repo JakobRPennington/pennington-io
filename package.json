@@ -1,6 +1,11 @@
 {
   "name": "pennington-io",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": {
+        "name": "Jakob Pennington",
+        "email": "jakob.pennington@gmail.com"
+    },
+    "description": "My personal website.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
