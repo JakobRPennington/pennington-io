@@ -8,12 +8,12 @@ const routes: Routes = [
         loadChildren: 'app/hibp/hibp.module#HIBPModule'
     },
     {
-        path: 'hello',
+        path: '',
         loadChildren: 'app/landing/landing.module#LandingModule'
     },
     {
         path: '**',
-        redirectTo: 'hello'
+        redirectTo: ''
     }
 ];
 
