@@ -1,3 +1,22 @@
-<p>
-  landing works!
-</p>
+<div id="landing-container">
+
+    <div id="left">
+        <img src="../../assets/images/jakob.jpg"/>
+    </div>
+
+    <div id="right">
+        <div id="name">
+            <h1 id="first">Jakob</h1>
+            <h1 id="last">Pennington</h1>
+        </div>
+
+        <div id="social-media-links">
+            <fa-icon [icon]="['fab', 'github']" [attr.target]="_blank" size="2x" (click)="openInNewTab(sites.github)"></fa-icon>
+            <fa-icon [icon]="['fab', 'medium-m']" size="2x" (click)="openInNewTab(sites.medium)"></fa-icon>
+            <fa-icon [icon]="['fab', 'twitter']" size="2x" (click)="openInNewTab(sites.twitter)"></fa-icon>
+            <fa-icon [icon]="['fab', 'linkedin-in']" size="2x" (click)="openInNewTab(sites.linkedin)"></fa-icon>
+            <fa-icon [icon]="['far', 'envelope']" size="2x" (click)="open(sites.email)"></fa-icon>
+        </div>
+    </div>
+
+</div>
