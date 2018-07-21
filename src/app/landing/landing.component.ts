@@ -2,6 +2,7 @@
 import { Component } from '@angular/core';
 
 enum sites {
+    blog = 'https://blog.pennington.io',
     email = 'mailto:jakob@pennington.io',
     github = 'https://github.com/JakobRPennington',
     linkedin = 'https://www.linkedin.com/in/jakobpennington',

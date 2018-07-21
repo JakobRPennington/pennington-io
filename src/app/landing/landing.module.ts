@@ -9,8 +9,10 @@ import { LandingRoutingModule } from './landing-routing.module';
 // Font Awesome library
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faMediumM, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+library.add(faUser);
 library.add(faEnvelope);
 library.add(faGithub);
 library.add(faLinkedinIn);
