@@ -1,5 +1,6 @@
 // Angular imports
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 enum sites {
     blog = 'https://blog.pennington.io',
@@ -19,7 +20,9 @@ export class LandingComponent {
     // Make enum available to the template
     sites: typeof sites = sites;
 
-    constructor() { }
+    constructor(private titleService: Title) {
+        this.titleService.setTitle('Hello - Jakob Pennington');
+    }
 
     openInNewTab(site: string): void {
         window.open(site, '_blank');
