@@ -2,12 +2,12 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 // App imports
-import { HIBPComponent } from './hibp.component';
+import { NgPasswordComponent } from './ng-password.component';
 
 const routes: Routes = [
     {
         path: '',
-        component: HIBPComponent
+        component: NgPasswordComponent
     },
 ];
 
@@ -15,4 +15,4 @@ const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class HIBPRoutingModule { }
+export class NgPasswordRoutingModule { }
