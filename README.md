@@ -1,4 +1,4 @@
-# PenningtonIO
+# pennington-io
 
 The codebase for my simple landing page website.
 

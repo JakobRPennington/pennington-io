@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "PenningtonIO": {
+        "pennington-io": {
             "root": "",
             "sourceRoot": "src",
             "projectType": "application",
@@ -36,7 +36,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/PenningtonIO",
+                        "outputPath": "dist/pennington-io",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -84,18 +84,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "PenningtonIO:build"
+                        "browserTarget": "pennington-io:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "PenningtonIO:build:production"
+                            "browserTarget": "pennington-io:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "PenningtonIO:build"
+                        "browserTarget": "pennington-io:build"
                     }
                 },
                 "test": {
@@ -129,7 +129,7 @@
                 }
             }
         },
-        "PenningtonIO-e2e": {
+        "pennington-io-e2e": {
             "root": "e2e/",
             "projectType": "application",
             "architect": {
@@ -137,11 +137,11 @@
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
                         "protractorConfig": "e2e/protractor.conf.js",
-                        "devServerTarget": "PenningtonIO:serve"
+                        "devServerTarget": "pennington-io:serve"
                     },
                     "configurations": {
                         "production": {
-                            "devServerTarget": "PenningtonIO:serve:production"
+                            "devServerTarget": "pennington-io:serve:production"
                         }
                     }
                 },
@@ -157,5 +157,5 @@
             }
         }
     },
-    "defaultProject": "PenningtonIO"
+    "defaultProject": "pennington-io"
 }
