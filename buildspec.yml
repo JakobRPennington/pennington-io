@@ -1,8 +1,7 @@
 version: 0.2
-environment_variables:
-    plaintext:
+env:
+    variables:
         S3_BUCKET: 'jakob.pennington.io'
-        BUILD_ENV: 'prod'
 phases:
     install:
         runtime-versions:
