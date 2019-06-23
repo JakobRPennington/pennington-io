@@ -1,11 +1,12 @@
 {
     "name": "pennington-io",
+    "description": "The codebase for my simple landing page website.",
+    "homepage": "https://jakob.pennington.io",
     "version": "1.1.0",
     "author": {
         "name": "Jakob Pennington",
         "email": "jakob.pennington@gmail.com"
     },
-    "description": "My personal website.",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
@@ -13,7 +14,7 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "version": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+        "version": "conventional-changelog -i CHANGELOG.md -s -r 0 && git add  CHANGELOG.md",
         "commit": "git-cz",
         "precommit": "lint-staged"
     },
