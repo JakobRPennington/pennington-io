@@ -4,10 +4,10 @@ import { Title } from '@angular/platform-browser';
 
 enum sites {
     email = 'mailto:jakob@pennington.io',
-    github = 'https://github.com/JakobRPennington',
+    github = 'https://github.com/jakobthedev',
     linkedin = 'https://www.linkedin.com/in/jakobpennington',
-    medium = 'https://medium.com/@jakob.pennington',
-    twitter = 'https://twitter.com/JakobRPenny'
+    medium = 'https://medium.com/@JakobTheDev',
+    twitter = 'https://twitter.com/JakobTheDev'
 }
 
 @Component({
@@ -19,7 +19,7 @@ export class LandingComponent {
     // Make enum available to the template
     sites: typeof sites = sites;
 
-    constructor(private titleService: Title) {
+    constructor(private readonly titleService: Title) {
         this.titleService.setTitle('Hello - Jakob Pennington');
     }
 
@@ -30,5 +30,4 @@ export class LandingComponent {
     open(site: string): void {
         window.open(site, '_self');
     }
-
 }
